@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+html ,body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+.container{
+    position: relative;
+
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: red;
+    background: transparent;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    color: white;
+    border-bottom: 1px solid #fff;
+}
+nav .part1 h1{
+    font-weight: 600;
+    font-size: 2vw;
+}
+nav .part1 h1 span{
+    font-weight: 400;
+    font-size: 2vw;
+}
+nav .part2{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+
+}
+nav .part2 button{
+    padding: .5vw 1vw;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    color: white;
+}
+.first{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+.first img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.first .top-div{
+    height: 70%;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.top-div .box1{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    flex-direction: column;
+}
+.top-div .box2{
+    height: 20%;
+    width: 100%;
+    background: transparent;
+}
+.top-div .box1 .dot{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+.box1 h5{
+    letter-spacing: 5px;
+}
+.box1 h4{
+    font-size: 3vw;
+}
+.box2{
+    display: flex;
+}
+.shades{
+    height: 60px;
+    width: 20%;
+    display: flex;
+    gap: 3px;
+}
+.shades .shade{
+    height: 100%;
+    width: 30%;
+    background-color: black;
+}
+#shade1{
+    background-color: rgba(0, 0, 0, 0.648);
+}
+#shade2{
+    background-color: rgba(0, 0, 0, 0.466);
+}
+#shade3{
+    background-color: rgba(0, 0, 0, 0.336);
+}
+#shade4{
+    background-color: rgba(0, 0, 0, 0.201);
+}
+.elem{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    border-bottom: 1.5px solid #fff;
+    position: relative;
+}
+.elem::before{
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    content: "";
+    transition: all ease 1s;
+}
+.elem:hover::before{
+    width: 100%;
+}
+.num{
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num h4{
+    font-size: 10px;
+}
